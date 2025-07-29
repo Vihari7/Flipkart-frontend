@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Box, TextField, Button } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -63,6 +64,7 @@ function Login() {
         Don't have an account? <Link to="/signup">Sign up</Link>
       </Box>
     </Box>
+<Footer />
   );
 }
 export default Login;
