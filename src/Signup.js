@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box, TextField, Button } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Signup() {
   const [email, setEmail] = useState("");
