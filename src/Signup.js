@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Box, TextField, Button } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
+import Header from "./header";
+import Footer from "./footer";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -26,6 +28,8 @@ function Signup() {
     }
   };
   return (
+     <Box>
+      <Header />
     <Box maxWidth={400} mx="auto" p={2}>
       <TextField
         type="email"
@@ -62,6 +66,8 @@ function Signup() {
       <Box mt={2} textAlign="center">
         Already have an account? <Link to="/login">Login</Link>
       </Box>
+    </Box>
+  <Footer />
     </Box>
   );
 }
