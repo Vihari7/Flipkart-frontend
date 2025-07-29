@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Box, TextField, Button } from "@mui/material";
 import { useNavigate, Link } from "react-router-dom";
-import Footer from "./components/Footer";
+import Header from "./header";
+import Footer from "./footer";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -27,6 +28,8 @@ function Login() {
     }
   };
   return (
+     <Box>
+      <Header />
     <Box maxWidth={400} mx="auto" p={2}>
       <TextField
         type="email"
@@ -64,7 +67,8 @@ function Login() {
         Don't have an account? <Link to="/signup">Sign up</Link>
       </Box>
     </Box>
-<Footer />
+   <Footer />
+    </Box>
   );
 }
 export default Login;
